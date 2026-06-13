@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Materi Mind Mapping</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #07111f;
+        color: #fff;
+      }
+      .wrap {
+        max-width: 1100px;
+        margin: auto;
+        padding: 22px;
+      }
+      .hero {
+        background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        border-radius: 24px;
+        padding: 36px 24px;
+        text-align: center;
+        margin-bottom: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+      }
+      .hero h1 {
+        margin: 0 0 10px;
+        font-size: 38px;
+        color: #facc15;
+      }
+      .hero p {
+        margin: 0;
+        color: #dbeafe;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+      }
+      .card {
+        background: #111827;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 22px;
+        padding: 24px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        transition: 0.25s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        border-color: #facc15;
+      }
+      .tag {
+        display: inline-block;
+        background: #facc15;
+        color: #111827;
+        padding: 6px 12px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: bold;
+        margin-bottom: 14px;
+      }
+      .card h2 {
+        margin: 0 0 12px;
+        font-size: 25px;
+        color: #93c5fd;
+      }
+      .card p {
+        color: #e5e7eb;
+        font-size: 16px;
+        line-height: 1.7;
+        min-height: 82px;
+      }
+      .btn {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        background: #2563eb;
+        color: white;
+        padding: 14px 18px;
+        border-radius: 14px;
+        font-weight: bold;
+        margin-top: 18px;
+      }
+      .btn:hover {
+        background: #1d4ed8;
+      }
+      .section-title {
+        margin: 30px 0 16px;
+        font-size: 26px;
+        color: #facc15;
+      }
+      .flow {
+        background: #0f172a;
+        border-radius: 22px;
+        padding: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 22px;
+      }
+      .flow-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        margin-top: 14px;
+      }
+      .step {
+        background: #1f2937;
+        padding: 18px;
+        border-radius: 18px;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+      }
+      .footer {
+        text-align: center;
+        padding: 28px 10px;
+        color: #94a3b8;
+        font-size: 14px;
+      }
+      @media (max-width: 768px) {
+        .grid,
+        .flow-list {
+          grid-template-columns: 1fr;
+        }
+        .hero h1 {
+          font-size: 30px;
+        }
+        .card p {
+          min-height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <section class="hero">
+        <h1>Dashboard Materi Mind Mapping</h1>
+        <p>
+          Kumpulan materi untuk memahami mind map, struktur bertingkat, pola
+          keputusan IF ELSE, dan cara melihat kubu positif serta negatif.
+        </p>
+      </section>
+
+      <div class="grid">
+        <div class="card">
+          <span class="tag">Materi 01</span>
+          <h2>Apa Itu Mind Map?</h2>
+          <p>
+            Peta pikiran untuk menyusun ide, memahami materi, dan melihat
+            hubungan antar konsep dengan lebih mudah.
+          </p>
+          <a
+            class="btn"
+            href="https://suksespintar.biz.id/apa-itu-mind-map"
+            target="_blank"
+          >
+            Buka Materi
+          </a>
+        </div>
+
+        <div class="card">
+          <span class="tag">Materi 02</span>
+          <h2>Mind Mapping Bertingkat</h2>
+          <p>
+            Mind mapping bertingkat: dari manusia, teknologi, data, omnichannel,
+            komunitas, sampai inovasi masa depan.
+          </p>
+          <a
+            class="btn"
+            href="https://suksespintar.biz.id/5-sub-judul"
+            target="_blank"
+          >
+            Buka Materi
+          </a>
+        </div>
+
+        <div class="card">
+          <span class="tag">Materi 03</span>
+          <h2>Decision Tree IF ELSE</h2>
+          <p>
+            Materi tentang pola berpikir keputusan menggunakan sistem IF ELSE
+            agar alur logika lebih mudah dipahami.
+          </p>
+          <a
+            class="btn"
+            href="https://suksespintar.biz.id/ifelse"
+            target="_blank"
+          >
+            Buka Materi
+          </a>
+        </div>
+
+        <div class="card">
+          <span class="tag">Materi 04</span>
+          <h2>Negatif & Positif</h2>
+          <p>
+            Kubu positif memperbaiki masalah. Kubu negatif membenarkan kesalahan
+            lalu membuat kesalahan baru.
+          </p>
+          <a
+            class="btn"
+            href="https://suksespintar.biz.id/negatif-positif"
+            target="_blank"
+          >
+            Buka Materi
+          </a>
+        </div>
+      </div>
+
+      <section class="flow">
+        <h2 class="section-title">Alur Belajar yang Disarankan</h2>
+        <div class="flow-list">
+          <div class="step">1. Pahami Mind Map</div>
+          <div class="step">2. Buat Cabang Bertingkat</div>
+          <div class="step">3. Latih IF ELSE</div>
+          <div class="step">4. Bedakan Positif & Negatif</div>
+        </div>
+      </section>
+
+      <div class="footer">© Dashboard Materi Mind Mapping</div>
+    </div>
+  </body>
+</html>
